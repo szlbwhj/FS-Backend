@@ -1,5 +1,0 @@
-2018-04-03 10:56:07.943 [http-nio-8099-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-04-03 10:56:07.943 [http-nio-8099-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
-2018-04-03 10:56:08.115 [http-nio-8099-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 171 ms
-2018-04-03 10:56:08.458 [http-nio-8099-exec-2] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
-2018-04-03 10:56:11.862 [pool-1-thread-1] INFO  c.h.h.s.e.s.m.q.ConsumeMailQueue - 剩余邮件总数:0
