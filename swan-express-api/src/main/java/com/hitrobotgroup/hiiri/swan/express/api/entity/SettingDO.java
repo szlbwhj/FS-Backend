@@ -39,7 +39,7 @@ public class SettingDO implements Serializable {
     private String id;
     @Column(name = "weixin", nullable = false, length = 40, unique = true)
     private String weiXinId;
-    @Column(name = "email", nullable = false, length = 40, unique = true)
+    @Column(name = "email", length = 50)
     private String email;
     @Column(name = "word_ids", length = 100)
     private String wordIds;

@@ -13,4 +13,6 @@ package com.hitrobotgroup.hiiri.swan.express.api.service;
 
 public interface PushNewsService {
     void genNews4Mail(String weiXinId);
+
+    void triggerPush();
 }

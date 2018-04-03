@@ -54,6 +54,10 @@ public class PushNewsServiceImpl implements PushNewsService {
         });
     }
 
+    public void triggerPush() {
+        this.push();
+    }
+
     @Override
     public void genNews4Mail(String weiXinId) {
         SettingDO item = settingService.getInfoDOByWeiXinId(weiXinId);

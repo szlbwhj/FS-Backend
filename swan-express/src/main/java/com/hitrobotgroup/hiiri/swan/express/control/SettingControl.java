@@ -79,4 +79,14 @@ public class SettingControl {
             return new JsonResult(false, ex.getMessage());
         }
     }
+
+    @RequestMapping(value = "triggerPushNewsAll", method = RequestMethod.POST)
+    JsonResult triggerPushNewsAll() {
+        try {
+            pushNewsService.triggerPush();
+            return new JsonResult(true, null);
+        } catch (Exception ex) {
+            return new JsonResult(false, ex.getMessage());
+        }
+    }
 }

@@ -35,9 +35,9 @@ public class ExpressDO implements Serializable {
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(name = "title", nullable = false, length = 50)
+    @Column(name = "title", nullable = false)
     private String title;
-    @Column(name = "source", nullable = false, length = 20)
+    @Column(name = "source", nullable = false)
     private String source;
     @Transient
     private String snippet;

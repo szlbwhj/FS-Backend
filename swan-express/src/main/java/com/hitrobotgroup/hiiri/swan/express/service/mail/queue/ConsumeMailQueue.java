@@ -43,6 +43,7 @@ public class ConsumeMailQueue {
                     if (mail != null) {
                         logger.info("剩余邮件总数:{}", MailQueue.getMailQueue().size());
                         mailService.sendThymeleaf(mail);
+                        Thread.currentThread().sleep(1000);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

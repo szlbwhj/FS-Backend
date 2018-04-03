@@ -10,7 +10,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class MailQueue {
     //队列大小
-    static final int QUEUE_MAX_SIZE = 1000;
+    static final int QUEUE_MAX_SIZE = 10000;
 
     static BlockingQueue<EmailDTO> blockingQueue = new LinkedBlockingQueue<EmailDTO>(QUEUE_MAX_SIZE);
 
