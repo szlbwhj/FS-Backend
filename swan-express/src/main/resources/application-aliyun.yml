@@ -1,0 +1,26 @@
+server:
+  port: 8099
+#  ssl:
+#    key-store: classpath:keystore.p12
+#    key-store-password: hrg123456
+#    keyStoreType: PKCS12
+#    keyAlias: tomcat
+
+#数据源配置
+spring:
+    datasource:
+        url: jdbc:mysql://116.62.223.76:3306/swan?characterEncoding=utf8
+        username: root
+        password: Hrg123456
+    jpa:
+      database: MYSQL
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect
+
+mybatis:
+    config-location: classpath:mybatis/mybatis-config.xml

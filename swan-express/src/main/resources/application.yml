@@ -1,0 +1,27 @@
+server:
+  port: 8099
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+spring:
+    datasource:
+        driver-class-name:  com.mysql.jdbc.Driver
+        url: jdbc:mysql://116.62.223.76:3306/swan?characterEncoding=utf8
+        username: root
+        password: Hrg123456
+    jpa:
+      database: MYSQL
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect
+
+mybatis:
+    config-location: classpath:mybatis/mybatis-config.xml
+
+#日志配置
+logging:
+  config: classpath:logback/logback_prd.xml
