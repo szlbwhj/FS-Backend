@@ -83,6 +83,8 @@ public class PushNewsServiceImpl implements PushNewsService {
                 wordExpress.putIfAbsent(w.getText(), dbList);
             }
         });
+        if (wordExpress.size() == 0)
+            return;
         EmailDTO mail = new EmailDTO();
         mail.setEmail(new String[]{item.getEmail()});
         Date d = new Date();
