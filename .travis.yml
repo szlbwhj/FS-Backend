@@ -3,4 +3,4 @@ language: java
 jdk:
   - oraclejdk8
 
-script: mvn clean compile
+script: mvn -e  clean compile
